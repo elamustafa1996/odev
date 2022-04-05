@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-color {
+            background-color: orange;
+            padding: 20px;
+            margin: 0 20%;
+
+        }
+
+        #item {
+            margin: 0 35%;
+            border-radius: 3px;
+            background-color: white;
+            padding: 2px;
+            color: orange;
+        }
+
+        #item-1 {
+            color: white;
+        }
+
+        .text-1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: auto;
+            text-align: center;
+        }
+
+        #marg {
+            margin-top: 10px;
+        }
+
+        #input-1 {
+            height: 30px;
+            border: 3px dotted white;
+
+            border-color: orange;
+            color: black;
+            outline: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+
+
+        }
+
+        #ekle {
+
+            color: orange;
+            padding: 10px 30px;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: white;
+            border: 3px dotted orange;
+        }
+
+        article {
+            margin: 0 20%;
+            background-color: orange;
+        }
+
+        ol li {
+            cursor: pointer;
+            position: relative;
+            padding: 12px 8px 12px 40px;
+            list-style-type: none;
+            background: rgb(250, 220, 85);
+            font-size: 18px;
+            transition: 0.2s;
+            border: 3px solid white;
+        }
+
+        ol li:hover {
+            background-color: palegoldenrod;
+        }
+
+        .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 1px;
+            padding: 12px 16px 12px 16px;
+            border: none;
+            background-color:rgb(250, 220, 85);
+        }
+
+        button:hover {
+            background-color:orange;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-color">
+        <h1 class="text-1" id="item">KODLUYORUZ </h1>
+        <h2 class="text-1" id="item-1">Yapılacaklar Listesi </h2>
+        <div id="marg">
+            <input type="text" placeholder="Bugün Ne Yapacaksın?" id="input-1" size="100">
+            <button type="button" id="ekle" onclick="sendList()">Ekle</button>
+            
+
+
+        </div>
+
+    </header>
+
+    <article>
+
+        <section>
+
+            <ol id="list">
+                <li>Hit the gym</li>
+                <li class="checked">Pay bills</li>
+            </ol>
+
+        </section>
+
+
+    </article>
+
+    <script src="new.js"></script>
+</body>
+
+</html>
